@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Shuttle Service Profile</title>
+    <link rel="stylesheet" href="CSS/Profiles.css"> 
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="nav-top">
+        <div class="search-container">
+            <input type="text" placeholder="Search..">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-profile-container">
+            <button class="profile-btn">
+                <i class="fas fa-user"></i> View Profile
+            </button>
+        </div>
+    </div>
+    <div class="nav-bottom">
+        <a href="#home">button</a>
+        <a href="#services">button2</a>
+        <a href="#about">button3</a>
+        <a href="#contact">button4</a>
+    </div>
+</nav>
+
+<div class="slider">
+    <div class="slides">
+        <img src="Images/bus3.jpg" alt="Image 1">
+        <img src="Images/bus5.webp" alt="Image 2">
+        <img src="Images/bus4.webp" alt="Image 3">
+        <img src="Images/bus5.webp" alt="Image 4">
+    </div>
+</div>
+
+<div class="profile-container">
+    <div class="profile-header">
+        <img src="<?= $user['profile_picture'] ?>" alt="Profile Picture" id="profile-picture">
+        <div class="student-info">
+            <h1>Sachini Umayangana</h1>
+            <p style="color: white;">ID: <?= htmlspecialchars($user['student_id']) ?></p>
+            <p style="color: white;">Email: <?= htmlspecialchars($user['email']) ?></p>
+            <p style="color: white;">Phone: <?= htmlspecialchars($user['phone_number']) ?></p>
+            <form method="POST" enctype="multipart/form-data">
+                <label for="file-upload" class="edit-photo" style="text-decoration: none; color: rgb(255, 255, 255);">Edit Profile Photo</label>
+                <input type="file" id="file-upload" name="profile_photo" accept="image/*" onchange="previewImage(event)">
+                <br>
+                <button type="submit" style="background-color: #dc3545;">Update Profile</button>
+            </form>
+            <br>
+            <a href="QR-Code.html" class="QR-button" style="background-color: #dc3545;">Download QR Code</a>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="section1">
+        <h3>Shuttle Service Details</h3>
+        <p>Route: Cinec Campus to Kiribathgoda</p>
+        <p>Timing: 8:00 AM - 8:30 AM</p>
+    </div>
+
+    <div class="section">
+        <h2>Monthly Payment History</h2>
+        <table>
+            <tr>
+                <th>Month</th>
+                <th>Amount</th>
+                <th>Payment Number</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>Rs 2500</td>
+                <td>001001</td>
+                <td>Paid</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>Rs. 2500</td>
+                <td>001002</td>
+                <td>Paid</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>Rs. 2500</td>
+                <td>001003</td>
+                <td>Pending</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Notifications</h2>
+        <div class="notification">
+            <p>Your next payment is due on April 1st, 2024.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Booking System</h2>
+        <a href="#" class="booking-button">Payment for Next Month</a>
+        <a href="QR-Code.html" class="booking-button" style="background-color: #dc3545;">Scan the QR Code</a>
+    </div>
+</div>
+
+<script src="JS/Profile.js"></script>
+
+<script>
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function() {
+            var output = document.getElementById('profile-picture');
+            output.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
+
+</body>
+</html>

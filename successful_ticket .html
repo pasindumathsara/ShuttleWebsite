@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Purchase Successful</title>
+    <link rel="stylesheet" href="CSS/ticket_success.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .container h2 {
+            color: #28a745;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .ticket-info {
+            text-align: left;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .ticket-info p {
+            margin: 10px 0;
+        }
+
+        .ticket-info strong {
+            color: #007bff;
+        }
+
+        .btn-container {
+            margin-top: 30px;
+        }
+
+        .btn-container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            margin-top: 30px;
+        }
+
+        .footer p {
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Success! Your Ticket is Confirmed</h2>
+    <p>Thank you for booking your shuttle. Below are the details of your ticket:</p>
+
+    <div class="ticket-info">
+        <p><strong>Shuttle ID:</strong> <?php echo $ticket['Shuttle_id']; ?></p>
+        <p><strong>From:</strong> <?php echo $ticket['start_point']; ?></p>
+        <p><strong>To:</strong> <?php echo $ticket['end_point']; ?></p>
+        <p><strong>Date:</strong> <?php echo $ticket['month']; ?></p>
+    </div>
+
+    <div class="btn-container">
+        <button onclick="window.print()">Print Ticket</button>
+        <button onclick="location.href='homepage.php'">Back to Home</button>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Shuttle Booking System. All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>

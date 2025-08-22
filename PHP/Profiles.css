@@ -1,0 +1,266 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+
+.to{
+    position: relative;
+    top: 10px;
+    left: 35px;
+    width: 700px;
+    height: 500px;
+}
+
+
+.profile-container {
+    max-width: 1450px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 254, 254, 0.1);
+    border-radius: 8px;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    width: 620px;
+    position: relative;
+    top: 70px;
+    left: 400px;
+    margin-bottom: 20px;
+    background-color: rgba(36, 39, 42, 0.5);
+    color: #fff;
+    padding: 50px;
+    padding-bottom: 105px;
+    border-radius: 5px;
+    
+}
+.line{
+    position: relative;
+    top: -180px;
+    width: 3px; /* Width of the line */
+    height: 200px;
+    right: -730px;
+    background-color: rgb(255, 255, 255); /* Color of the line */
+
+}
+.QR-button{
+    position: relative;
+    left: 440px;
+    top: -10px;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.profile-header img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: -120px;
+    left: 200px;
+}
+.profile-header .student-info {
+    flex-grow: 1;
+}
+.profile-header .student-info h1 {
+    margin: 0;
+}
+.profile-header .student-info p {
+    margin: 5px 0;
+    color: #555;
+}
+.edit-photo {
+    display: block;
+    margin-top: 10px;
+    color: #84bfff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.student-info{
+    padding-left: 50px;
+    position: relative;
+    top: 80px;
+    left: -200px;
+    color: white;
+}
+.edit-photo input {
+    display: none;
+}
+.section1 {
+    margin-bottom: 20px;
+    padding: 20px;
+   color: white;
+    position: absolute;
+    top: 300px;
+    width: 600px;
+    right: 50px;
+}
+
+.section {
+    position: relative;
+    top: -60px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #d2e5fa;
+    left: 25px;
+    width: 1353px;
+}
+.section h2 {
+    margin-bottom: 10px;
+}
+.section table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+.section table, .section table th, .section table td {
+    border: 1px solid #ddd;
+}
+.section table th, .section table td {
+    padding: 8px;
+    text-align: left;
+}
+.section table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.booking-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.notification {
+    background-color: #ffeb3b;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+        .navbar {
+         background-color: #333;
+         color: white;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 10px 0;
+     }
+
+     .nav-top {
+         display: flex;
+         justify-content: space-between;
+         width: 80%;
+     }
+
+     .search-container {
+         display: flex;
+         align-items: center;
+         
+     }
+
+     .search-container input[type="text"] {
+         padding: 5px;
+         border: none;
+         border-radius: 5px 0 0 5px;
+         width: 400px;
+     }
+
+     .search-container button {
+         padding: 5px;
+         border: none;
+         background: #555;
+         color: white;
+         border-radius: 0 5px 5px 0;
+         cursor: pointer;
+     }
+
+     .nav-profile-container {
+         display: flex;
+         align-items: center;
+     }
+
+     .profile-btn {
+         background: #555;
+         color: white;
+         border: none;
+         padding: 5px 10px;
+         cursor: pointer;
+         border-radius: 5px;
+     }
+
+     .nav-bottom {
+         display: flex;
+         justify-content: center;
+         width: 100%;
+         margin-top: 10px;
+     }
+
+     .nav-bottom a {
+         color: white;
+         padding: 10px 20px;
+         text-decoration: none;
+         text-align: center;
+     }
+
+     .nav-bottom a:hover {
+         background-color: #555;
+         border-radius: 5px;
+     }
+
+
+
+
+
+     .slider {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 650px; /* Adjust this value to decrease the height */
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .slides {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slides img {
+        min-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: none;
+    }
+    
+    .student-info{
+        position: absolute;
+        left: -10px;
+    }

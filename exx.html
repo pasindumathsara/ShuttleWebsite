@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Shuttle Service Profile</title>
+    <link rel="stylesheet" href="CSS/exxx.css"> 
+    <link rel="stylesheet" href="CSS/navbar.css"> 
+    
+</head>
+<body>
+
+
+
+
+     <!-- Navigation Bar -->
+     <nav class="navbar">
+        <div class="nav-top">
+            <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-profile-container">
+                <button class="profile-btn">
+                    <i class="fas fa-user"></i> View  Profile button
+                </button>
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <a href="#home">button</a>
+            <a href="#services">button2</a>
+            <a href="#about">button3</a>
+            <a href="#contact">button4</a>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="con">
+    <p class="topic">Admin Profile</p>
+
+
+    <img class="pic" id="slider" src="Images/image2.jpg" alt="Image Slider" >
+        
+    </div>
+
+
+    <div class="grid-container">
+                    <div class="tt">
+                            <p class="para">Staff Details</p>
+                            <img src="Images/staff.jpeg" alt="Clickable Image" class="clickable-image" id="clickableImage">
+                    </div>
+
+                    <div class="tt">
+                            <p class="para">Student Details</p>
+                            <img src="Images/stud.jpeg" alt="Clickable Image" class="clickable-image1" id="clickableImage1">
+                    </div>
+
+                    <div class="tt">
+                            <p class="para">Bus Details</p>
+                            <img src="Images/bus3.jpg" alt="Clickable Image" class="clickable-image2" id="clickableImage2">
+                    </div>
+    </div>
+
+
+
+
+
+   
+
+
+
+
+
+    <img src="Images/staff.jpeg" alt="Clickable Image" class="clickable-image0  " id="clickableImage">
+    <img src="Images/stud.jpeg" alt="Clickable Image" class="clickable-image01" id="clickableImage1">
+    <img src="Images/bus3.jpg" alt="Clickable Image" class="clickable-image02" id="clickableImage2">
+
+    <p class="para1"> Staff Our Service<br><br><br>
+        
+        Our team is skilled, well-trained, and dedicated to<br> providing top-quality  service.
+         They are friendly, attentive, <br>and always ready to help, ensuring a pleasant and <br>
+         efficient experience for our customers.<br><br>Each team member brings a wealth of experience and<br>
+          expertise, enabling them to handle any challenges with<br>
+           ease and professionalism. 
+    </p>
+
+
+    <p class="para2"> Staff Our Service<br><br><br>
+        
+        Our team is skilled, well-trained, and dedicated to<br> providing top-quality  service.
+         They are friendly, attentive, <br>and always ready to help, ensuring a pleasant and <br>
+         efficient experience for our customers.
+         
+    </p>
+
+
+    <p class="para3"> Staff Our Service<br><br><br>
+        
+        Our team is skilled, well-trained, and dedicated to<br> providing top-quality  service.
+         They are friendly, attentive, <br>and always ready to help, ensuring a pleasant and <br>
+         efficient experience for our customers.<br><br>Each team member brings a wealth of experience and<br>
+          expertise, enabling them to handle any challenges with<br>
+           ease and professionalism. 
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            // JavaScript to handle the click event
+            document.getElementById('clickableImage').addEventListener('click', function() {
+                window.location.href = 'StaffProfile.html';
+            });
+
+
+            document.getElementById('clickableImage1').addEventListener('click', function() {
+                window.location.href = 'StudentProfile.html';
+            });
+
+            document.getElementById('clickableImage2').addEventListener('click', function() {
+                window.location.href = 'book_ticket.html';
+            });
+       
+   
+    
+
+
+   
+            
+
+   
+        const images = [
+                'Images/image2.jpg',
+                'Images/bus12.avif',
+                'Images/cinec-inner-page.webp'
+        ];
+
+        let currentIndex = 0;
+        const imgElement = document.getElementById('slider');
+
+        function changeImage() {
+            imgElement.classList.add('blur');
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                imgElement.src = images[currentIndex];
+                imgElement.classList.remove('blur');
+            }, 10); // match this time with the transition duration
+        }
+
+        setInterval(changeImage, 3000); // change image every 5 seconds
+   
+</script>
+
+    
+
+
+
+
+        
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="CSS/QR-Code.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    
+</head>
+<body>
+
+
+
+     <!-- Navigation Bar -->
+    
+
+
+    <div class="txt">
+       
+        Using QR Codes for Shuttle Service<br>
+        
+        Scan the Code: Use your phone's camera or a QR code<br> app to scan the QR code on our webpage.</div>
+
+
+
+    <a href="PHP/StudentProfile.php" class="button">Go Back</a>
+  
+
+    
+
+    <div class="container">
+        <h1>Downlaod QR - Code</h1>
+        <input type="text" class="Lable" id="qrText" placeholder="Enter Card Number">
+        <button onclick="generateQRCode()">Generate QR Code</button>
+        <div id="qrCodeContainer"></div>
+        <button id="downloadBtn" style="display: none;" onclick="downloadQRCode()">Download QR Code</button>
+    </div>
+   
+    
+    <p class="heading">Scan Your QR - Code</p>
+
+    <img src="Images/uniShuttle.png" class="pic">
+
+
+
+    
+        <div class="slider">
+            <div class="slides">
+                <img src="Images/QR1.jpeg" alt="Image 1">
+                <img src="Images/QR2.jpg" alt="Image 2">
+                <img src="Images/QR3.jpg" alt="Image 3">
+                <img src="Images/QR4.avif" alt="Image 4">
+            </div>
+        </div>
+    
+    <script src="JS/QR-Code.js"></script>
+
+
+</body>
+</html>
+

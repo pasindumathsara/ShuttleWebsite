@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 400px;
+}
+
+.search-container button {
+    padding: 5px;
+    border: none;
+    background: #555;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-btn {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nav-bottom a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-bottom a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.progress-container {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 10px;
+    background-color:rgb(62, 129, 206);
+    transition: width 0.3s;
+    transform: translateY(-50%);
+    width: 0;
+}
+
+.progress-step {
+    width: 50px;
+    height: 50px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+    position: relative;
+    z-index: 1;
+}
+
+.progress-step.active {
+    background-color:rgb(62, 129, 206);
+    color: #fff;
+}
+
+.bbox{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    background: linear-gradient(to right, rgb(145, 147, 148) 30%, rgb(231, 232, 238) 25%);
+    left: 280px;
+    top: 200px;
+    box-shadow: 0px 0px 10px 0px rgb(59, 59, 72);
+} 
+.card-details-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.card-details-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 400px;
+    position: relative;
+    left: 400px;
+    top: 80px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    top: 100px;
+    width: 120px;
+    left:310px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+
+
+.cancel-btn {
+    background-color: #766c6c;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none; 
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    position: relative; 
+    top: 100px;
+    width: 120px;
+    left: 310px;
+}
+
+.cancel-btn:hover {
+    background-color: #616468;
+    cursor: pointer;
+}
+
+
+.icons{
+    position: relative;
+    top: -340px;
+    left: 30px;
+    width: 25px;
+    height: 25px;
+}
+
+.subh{
+    position: relative;
+    top: -390px;
+    left: 70px;
+}
+.details{
+    position: relative;
+    top: -400px;
+    left: 65px;
+
+}

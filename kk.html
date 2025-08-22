@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <link rel="stylesheet" href="CSS/payments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-top">
+            <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="profile-container">
+                <button class="profile-btn">
+                    <i class="fas fa-user"></i> View Profile
+                </button>
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="progress-container" style="position: relative; top: 90px; left: 150px;">
+        <div class="progress-bar" id="progress-bar"></div>
+        <div class="progress-step active" data-step="1">choose</div>
+        <div class="progress-step" data-step="2">details</div>
+        <div class="progress-step" data-step="3">accept</div>
+        <div class="progress-step" data-step="4">payment</div>
+    </div>
+
+
+    <div class="bbox">
+        <div style="position: relative; left: 20px;">
+    <h2 style="font-family: 'Times New Roman', Times, serif ; position: relative; top: 50px;left: 350px;">Complete Your Purchase</h2>
+    <form action="/submit-payment" method="POST">
+        <div class="form-group">
+            <label for="cardholder-name">Cardholder Name</label>
+            <input type="text" id="cardholder-name" name="cardholder-name" required>
+        </div>
+        <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" required pattern="\d{16}" title="Enter a valid 16-digit card number">
+        </div>
+        <div class="form-group">
+            <label for="expiry-date">Expiration Date</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required pattern="\d{2}/\d{2}" title="Enter expiration date in MM/YY format" style="width: 75px;">
+        </div>
+        <div class="form-group">
+            <label for="cvv" style="position: relative;left: 150px; top: -80px;">CVV</label>
+            <input type="text" id="cvv" name="cvv" required pattern="\d{3}" title="Enter a valid 3-digit CVV "style="width: 75px; position: relative; top: -78px; left: 150px;" >
+        </div>
+
+        <input type="checkbox" id="acceptTerms" name="acceptTerms" required  style="position: relative;left: 400px;">
+        <label for="acceptTerms" style="position: relative;left: 400px;">I accept the <a href="#" target="_blank">Terms and Conditions</a></label>
+        <button type="submit" class="cancel-btn">Cancel</button>
+        <button type="submit" class="submit-btn" onclick="location.href='verify_payment.html'">Submit</button>
+    
+    </form>
+</div>
+<h2 style="position: relative; font-size: 20px; top: -360px;left: 30px;">Payment For <br>  <p style="position: relative; color: rgb(255, 255, 255); top: -15px; font-size: 25px;">Monthly Ticket</p></h2>
+    
+<img src="Images/amounticon-removebg-preview.png" alt="" class="icons">
+<h3 class="subh">Amount</h3>
+<p class="details"> Rs.5400.00</p>
+
+<div style="position: relative; top: -30px;">  
+<img src="Images/888701f8fdf9e996232b0175b998a841-removebg-preview.png" alt="" class="icons">
+<h3 class="subh">Time Period</h3>
+<p class="details"> 07/24 - 08/24</p>
+</div> 
+
+<div style="position: relative; top: -70px;">  
+    <img src="Images/images__1_-removebg-preview.png" alt="" class="icons">
+    <h3 class="subh">Ticket Number</h3>
+    <p class="details"> 24070845</p>
+    </div> 
+
+    <p style="position: relative; "><li style="position: relative; top: -420px; left: 30px;"> By accessing our services, <br> you agree to abide by our rules  and <br>regulations.  We ensure that all <br> payments are highly secured for  <br>your peace of mind.</li></p>
+    
+    
+    
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+    <script src="JS/payments.js"></script>
+
+
+
+</body>
+</html>

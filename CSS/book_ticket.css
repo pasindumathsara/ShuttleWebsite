@@ -1,0 +1,336 @@
+/* Prevent horizontal scrolling */
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 400px;
+}
+
+.search-container button {
+    padding: 5px;
+    border: none;
+    background: #555;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-btn {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nav-bottom a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-bottom a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    position: relative;
+    top: 400px;
+}
+
+.booking-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+    left: 359px;
+    top: 10px;
+}
+
+.form-group1 {
+    margin-bottom: 15px;
+    position: relative;
+    left: 659px;
+    top: -37px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: #218838;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+}
+
+.hero-image-slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    position: relative;
+    top: -90px;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+.btn {
+    position: relative;
+    top: -220px;
+    left: 200px;
+    height: 50px;
+    width: 170px;
+    border-radius: 30px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(65, 149, 245);
+    width: 175px;
+    height: 55px;
+}
+
+.all {
+    position: relative;
+    width: 1000px;
+    height: 350px;
+    background: linear-gradient(to right, rgb(38, 109, 189) 30%, rgb(255, 255, 255) 25%);
+    left: 200px;
+    top: -150px;
+}
+
+.first {
+    position: relative;
+    left: 350px;
+    top: -40px;
+}
+
+.ss {
+    position: relative;
+    width: 120px;
+    height: 35px;
+    left: 700px;
+    top: -20px;
+    border-radius: 5px;
+    border-color: #555;
+}
+
+.ss:hover {
+    cursor: pointer;
+    background-color: rgb(62, 129, 206);
+    border: none;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+.nav-top, .nav-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bottom a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-bottom a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.search-container {
+    display: flex;
+}
+.profile-container {
+    display: flex;
+}
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: -35px;
+}
+.hero-image-slider img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.hero-image-slider img:first-child {
+    opacity: 1;
+}
+.booking-form {
+    position: relative;
+    width: 1100px;
+    height: 350px;
+    background: linear-gradient(to right, rgb(38, 109, 189) 30%, rgb(255, 255, 255) 25%);
+    left: 220px;
+    top: -632px;
+
+}
+.booking-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.booking-form input, .booking-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+}
+.booking-form button {
+    position: relative;
+    width: 120px;
+    height:35px;
+    left: 150px;
+    top: -370px;
+    border-radius: 5px;
+    border-color:#dbd6d6;
+    background-color: #dccfd0;
+}
+.booking-form button.cancel {
+    background-color: #dccfd0;
+}
+.booking-form button:hover {
+    
+    background-color: rgb(78, 157, 247);
+    cursor: pointer;
+}

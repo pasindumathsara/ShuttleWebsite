@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #c9d6ff;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+}
+
+nav ul.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.nav-list li {
+    margin: 0 20px;
+}
+
+nav ul.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+nav ul.nav-list li a:hover {
+    color: #3498db;
+    transition: 0.3s ease;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-container {
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.title {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    animation: bounceIn 1.2s ease;
+}
+
+.select-wrapper {
+    margin-bottom: 30px;
+}
+
+.select-box {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 2px solid #3498db;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease;
+}
+
+.select-box:hover {
+    border-color: #2980b9;
+}
+
+.done-button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.done-button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

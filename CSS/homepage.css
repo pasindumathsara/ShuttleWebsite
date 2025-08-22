@@ -1,0 +1,625 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    height: 80px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header nav ul li .btn {
+    background: #f39c12;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    color: #fff;
+    text-align: center;
+    left: -29px;
+    top: -10px;
+}
+
+.hero .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero .slider .slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.hero .slider .slide.active {
+    opacity: 1;
+}
+
+.hero .cta {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    top: 490px;
+}
+
+.hero .cta h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero .cta .btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 50px 30px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.events-carousel, .promotions-grid, .services-grid, .testimonials-carousel, .partners-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.event-card, .promotion-card, .service-card, .testimonial, .partner-logo {
+    flex: 0 0 auto;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.event-card img, .promotion-card img, .testimonial img, .partner-logo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-card h3, .promotion-card h3, .service-card h3 {
+    margin: 15px 0;
+}
+
+.event-card p, .promotion-card p, .testimonial p, .service-card p {
+    margin: 10px 0;
+}
+
+.event-card .btn, .promotion-card .btn, .event-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.service-card i {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.footer-links, .social-media, .contact-info, .newsletter-signup {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+.event-card:hover{
+        transform: scale(1.1);
+}
+
+.event-card{
+        transition: transform .5s;
+}
+.secondbox{
+    height: 900px;
+    background-color: black;
+
+}
+.third{
+    height: 700px;
+    background-color: rgb(245, 241, 241);
+    position: relative;
+    top: 180px;
+}
+.rectn{
+    position: relative;
+    width: 500px;
+    height: 50px;
+    background-color: #96a6f8;
+    border-radius: 5px;
+    left: 240px;
+    top: 100px;
+
+}
+.fourth{
+    height: 700px;
+    background-color: rgb(214, 214, 214);
+    position: relative;
+    top: 100px;
+}
+.image-container {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            left: 100px;
+            top: 54px;
+        }
+ .image-container1 {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            left: 550px;
+            top: -240px;
+        }
+        .image-container2 {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            left: 1050px;
+            top: -540px;
+        }
+        
+        
+        
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+        .image-container1:hover {
+            transform: scale(1.05);
+        }   .image-container2:hover {
+            transform: scale(1.05);
+        }
+        
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            transition: left 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .image-container:hover .overlay {
+            left: 0;
+        }
+
+        .image-container1:hover .overlay {
+            left: 0;
+        }
+
+        .image-container2:hover .overlay {
+            left: 0;
+        }
+        .details {
+            text-align: left;
+            width: 80%; /* Adjust width as needed */
+        }
+        .details h4, .details p {
+            margin: 5px 0;
+        }
+        .fifith{
+            position: relative;
+            width: 400px;
+            background-image: url();
+        }
+        
+.background {
+    background-image: url('cinec.jpg'); /* Replace with your image URL */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    background: rgba(2, 2, 2, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 1200px;
+    height: 250px;
+    position: relative;
+    top: 50px;
+}
+
+button {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+.sixth{
+    position: relative;
+    height: 500px;
+    background-color: #0e0e0e;
+}
+/* Footer Styling */
+.footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 15px 0;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #555;
+  padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f39c12;
+}
+
+.newsletter-form input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #f39c12;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #e67e22;
+}
+
+.social-media-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-media-links a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-media-links a:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+
+
+#eventList {
+    padding: 20px;
+    display: none; /* Hidden initially */
+}
+
+.event-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+
+.btn {
+    font-size: 18px;
+    padding: 5px 30px;
+    margin: 10px;
+    border: 2px solid rgb(19, 128, 158);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    background-color: rgb(8, 126, 172);
+    color: rgb(255, 255, 255);
+}
+
+.login-btn:hover {
+    background-color: rgb(17, 52, 119);
+    color: rgb(255, 255, 255);
+}
+
+.signup-btn {
+    background-color: rgb(8, 126, 172);
+    color: rgb(255, 255, 255);
+}
+
+.signup-btn:hover {
+    background-color: rgb(17, 52, 119);
+    color: rgb(255, 255, 255);
+}     
+/* Assuming Font Awesome is included in your project */
+.search-container {
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Style the icon within the button */
+.search-container button i {
+    font-size: 16px;
+    color: #555; /* Adjust icon color */
+}
+
+.profile-menu {
+    position: relative;
+}
+
+.profile-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    top: -210px;
+    left: 1215px;
+}
+.profile-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    top: -210px;
+    left: 1215px;
+}
+.profile-dropdown {
+    position: relative;
+    top: -50px;
+    background-color: #333;
+    display: none;
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -20px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: gold;
+}
+
+.navbar-profile:hover .profile-dropdown {
+    display: block;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+.profile-menu {
+    position: relative;
+}   
+
+
+.animated-text {
+    display: inline-block;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 5px;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.animated-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(50px); /* Start from the right */
+    animation: moveRightLeft 2s ease-in-out forwards;
+}
+
+/* Right-to-left animation for the letters */
+@keyframes moveRightLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(50px); /* Start off-screen to the right */
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0); /* Move to original position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Stay in place */
+    }
+}
+
+/* Adding delays to each letter */
+.animated-text span:nth-child(1) { animation-delay: 0.1s; }
+.animated-text span:nth-child(2) { animation-delay: 0.2s; }
+.animated-text span:nth-child(3) { animation-delay: 0.3s; }
+.animated-text span:nth-child(4) { animation-delay: 0.4s; }
+.animated-text span:nth-child(5) { animation-delay: 0.5s; }
+.animated-text span:nth-child(6) { animation-delay: 0.6s; }
+.animated-text span:nth-child(7) { animation-delay: 0.7s; }
+.animated-text span:nth-child(8) { animation-delay: 0.8s; }
